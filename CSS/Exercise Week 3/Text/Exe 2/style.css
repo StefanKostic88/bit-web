@@ -1,0 +1,12 @@
+p::first-letter {
+  font-size: 22px;
+}
+p:first-child::first-letter {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+p:nth-child(2):first-letter {
+  text-transform: lowercase;
+  text-decoration: line-through;
+}

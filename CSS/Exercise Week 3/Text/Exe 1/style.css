@@ -1,0 +1,45 @@
+/* .par-1 {
+  font-size: 1.6rem;
+}
+.par-1 span {
+  font-size: 2rem;
+}
+.par-2 {
+  font-size: 10px;
+}
+.par-2 span {
+  font-size: 15px;
+}
+.par-3 {
+  font-size: 22px;
+}
+.par-3 span {
+  font-size: 16px;
+} */
+
+@font-face {
+  font-family: "Fasthand";
+  src: url(./Fasthand-Regular.ttf);
+}
+* {
+  font-size: 16px;
+  font-weight: 500;
+}
+h1 {
+  font-family: "Fasthand", cursive;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.par-1 {
+  font-size: 1.2rem;
+  font-family: "Fasthand", cursive;
+}
+.par-2 {
+  font-style: oblique;
+}
+
+.italic {
+  font-weight: 700;
+  font-style: italic;
+}
