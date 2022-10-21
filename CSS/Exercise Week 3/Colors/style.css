@@ -1,0 +1,27 @@
+p {
+  /* color: darkturquoise; */
+}
+
+P:first-child {
+  color: darkturquoise;
+  background-color: red;
+  opacity: 0.5;
+}
+P:nth-child(2) {
+  color: rgba(0, 206, 209);
+  background-color: rgba(0, 0, 255, 0.4);
+}
+P:nth-child(3) {
+  background-color: yellow;
+  color: #00ced1;
+}
+img {
+  height: 50px;
+}
+
+tr:first-child {
+  background-color: aliceblue;
+}
+tr:nth-child(2) {
+  background-color: hotpink;
+}
