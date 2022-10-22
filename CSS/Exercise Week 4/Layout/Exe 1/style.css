@@ -1,0 +1,26 @@
+p {
+  width: 500px;
+}
+#first-img {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  margin-bottom: 50px;
+}
+#second-img {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+#third-img {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+a {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}

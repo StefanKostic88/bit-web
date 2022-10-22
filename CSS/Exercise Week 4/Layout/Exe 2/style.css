@@ -1,0 +1,55 @@
+#parent-element {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+.some-divs {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  inset: 0;
+}
+
+.some-divs:first-child {
+  background-color: red;
+}
+.some-divs:nth-child(2) {
+  background-color: bisque;
+  top: 50%;
+  left: 50%;
+}
+.some-divs:nth-child(3) {
+  background-color: aqua;
+  top: 100%;
+  left: 100%;
+}
+
+#parent-element-2 {
+  margin: 300px auto;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.some-divs-2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  inset: 0;
+}
+.some-divs-2:first-child {
+  background-color: red;
+  left: 100%;
+  top: 0;
+}
+.some-divs-2:nth-child(2) {
+  background-color: bisque;
+  top: 50%;
+  left: 50%;
+}
+.some-divs-2:nth-child(3) {
+  background-color: aqua;
+
+  top: 100%;
+  left: 0;
+}

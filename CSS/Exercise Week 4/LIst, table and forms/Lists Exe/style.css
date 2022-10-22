@@ -1,0 +1,25 @@
+#first-unordered-list {
+  list-style: circle;
+}
+
+#second-unordered-list {
+  list-style: square;
+}
+#first-ordered-list {
+  list-style: upper-alpha;
+}
+
+#second-ordered-list {
+  list-style: upper-roman;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}
+.list-img-marker {
+  width: 200px;
+}
+.list-img-marker li::marker {
+  content: url(https://cdn-icons-png.flaticon.com/512/179/179508.png);
+}
