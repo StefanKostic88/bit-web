@@ -10,3 +10,30 @@ p:nth-child(2):first-letter {
   text-transform: lowercase;
   text-decoration: line-through;
 }
+p:first-child {
+  letter-spacing: 5px;
+  text-align: left;
+}
+p:nth-child(2) {
+  line-height: 200%;
+  text-align: right;
+}
+p:nth-child(3) {
+  text-align: center;
+}
+ul {
+  color: black;
+  text-shadow: 0 2px black;
+}
+a:link {
+  color: red;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: green;
+}
+a:active {
+  color: blue;
+}
