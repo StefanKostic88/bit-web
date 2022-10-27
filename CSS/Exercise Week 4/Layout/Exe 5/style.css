@@ -1,0 +1,23 @@
+.main-header {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.main-header li {
+  padding: 5px 10px;
+  background-color: red;
+}
+
+.main-header > li:nth-child(3) {
+  position: relative;
+  background-color: black;
+}
+
+.sub-header {
+  list-style: none;
+  position: absolute;
+  width: 300%;
+  top: 100%;
+  left: -60%;
+}

@@ -1,0 +1,42 @@
+/* .container {
+  background-color: blue;
+  width: 600px;
+  height: 600px;
+  margin: 100px auto 0 auto;
+  background-image: url(https://images.pexels.com/photos/627718/pexels-photo-627718.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  background-position: center;
+} */
+
+/* background-attachment: scroll;  */
+/* dobro za skrolovanje  */
+
+/* /////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////// */
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.img-1 {
+  height: 200px;
+  margin: 0 0 0 auto;
+}
+.img-2 {
+  width: 200px;
+  margin: 0 auto;
+}
+.img-3 {
+  width: 200px;
+  height: 200px;
+}
+
+/* Background Color */
