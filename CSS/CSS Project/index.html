@@ -3,146 +3,562 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS PROJECT</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>CSS Project</title>
   </head>
   <body>
     <main>
-      <div class="hero">
-        <header class="header">
+      <div class="hero border-padding margin-bottom">
+        <header class="main-header flex flex__space-between-center">
           <h1 class="logo"><span>Build</span> Estate</h1>
-          <ul class="main-nav">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Services</a></li>
-            <li class="nav-item"><a href="#">Contact Us</a></li>
+          <ul>
+            <li><a class="main-header__link" href="#">Home</a></li>
+            <li><a class="main-header__link" href="#section-1">About</a></li>
+            <li><a class="main-header__link" href="#section-2">Services</a></li>
+            <li>
+              <a class="main-header__link" href="#section-3">Contact us</a>
+            </li>
           </ul>
         </header>
-        <div class="sub-heading-container">
-          <h2 class="sub-heading">
-            We shape our buildinngs thereafter they shape us
+        <div class="flex hero-content flex__center">
+          <h2 class="hero-title">
+            We shape our buildings thereafter they shape us
           </h2>
-          <button class="sub-heading-btn">Read More</button>
+          <button class="btn hero-btn">Read more</button>
         </div>
       </div>
-      <div class="about-us-container">
-        <h2 class="about-us-heading">Who We Are</h2>
-        <div class="simbol"></div>
-        <div class="about-us-contnet">
+      <section class="section margin-bottom" id="section-1">
+        <h2 class="section-title">Who We Are</h2>
+        <div class="symbol"></div>
+        <div class="section-content">
           <figure class="about-card">
-            <h3 class="about-card__heading">Welcome To Our Build Estate</h3>
-            <p class="about-card__content">
-              If you can build buildings, why sit on the beach? We always think
-              of buildings in their settings, but so do pther arhitects.
+            <h3>Welcome to our build estate</h3>
+            <p>
+              <q
+                >If you can build buildings, why sit on the beach? We always
+                think of buildings in their settings, but so do other
+                archotects</q
+              >
             </p>
-            <ul class="about-card__list">
-              <li class="about-card__list-item">
-                Internacional Office buildinngs
+            <ul>
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                International office buildings
               </li>
-              <li class="about-card__list-item">Appartment On Premier House</li>
-              <li class="about-card__list-item">
-                Prices Are Low & Parking Allowence
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                appartment on premier house
               </li>
-              <li class="about-card__list-item">Best designe Architecture</li>
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                proces are low & parking allowance
+              </li>
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                best design architecture
+              </li>
             </ul>
           </figure>
-          <!-- <div class="img-container"></div> -->
-          <img src="./img/banner3.jpg" />
-
+          <figure class="img-container">
+            <img src="./images/about.jpg" alt="" />
+          </figure>
           <figure class="about-card">
-            <h3 class="about-card__heading">We make your dream home</h3>
-            <p class="about-card__content">
-              For decades engineers have stood accused that their buildings do
-              not have any cultural value. We have attempted to liberate
-              engineering of this accusation
+            <h3>We Make your dream home</h3>
+            <p>
+              <q>
+                For decade engineers have stood accused that their buildings do
+                not have any cultural value. We have attempted to liberate
+                engineering of this accusation</q
+              >
             </p>
-            <ul class="about-card__list">
-              <li class="about-card__list-item">Great engineers Idead</li>
-              <li class="about-card__list-item">
-                Planning for future model buildings
+            <ul>
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                great engineers ideas
               </li>
-              <li class="about-card__list-item">
-                Modern Appartment With large space
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                planning for future model buildings
               </li>
-              <li class="about-card__list-item">
-                new Residental complex Features
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                moedrn appartment with large space
+              </li>
+              <li>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <title>arrow-right</title>
+                    <path d="M31 16l-15-15v9h-16v12h16v9z"></path></svg
+                ></span>
+                new residential complex fitures
               </li>
             </ul>
           </figure>
         </div>
-      </div>
-      <div class="service-container">
-        <!-- <h2 class="service-heading">Who We Are</h2> -->
+      </section>
+      <section class="section margin-bottom" id="section-2">
+        <h2 class="section-title">What people say</h2>
+        <div class="symbol"></div>
+        <div class="section-content testemonial-content">
+          <figure class="testemonial-card">
+            <div class="testemonial-profile">
+              <div class="profil-img">
+                <img src="./images/t1.jpg" alt="user 1 img" />
+              </div>
+              <div class="profile-name-rating-container">
+                <span>Wiliamson</span>
+                <span>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="testemonial-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              eius ab quis! Eveniet veritatis illo rerum, ea delectus sequi
+              alias cumque quas quam, nesciunt non recusandae pariatur adipisci
+              enim fuga?
+            </div>
+          </figure>
+          <figure class="testemonial-card">
+            <div class="testemonial-profile">
+              <div class="profil-img">
+                <img src="./images/t2.jpg" alt="user 2 img" />
+              </div>
+              <div class="profile-name-rating-container">
+                <span>Wiliamson</span>
+                <span>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="testemonial-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              eius ab quis! Eveniet veritatis illo rerum, ea delectus sequi
+              alias cumque quas quam, nesciunt non recusandae pariatur adipisci
+              enim fuga?
+            </div>
+          </figure>
+          <figure class="testemonial-card">
+            <div class="testemonial-profile">
+              <div class="profil-img">
+                <img src="./images/t3.jpg" alt="user 3 img" />
+              </div>
+              <div class="profile-name-rating-container">
+                <span>Sarah</span>
+                <span>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>hair-cross</title>
+                    <path
+                      d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM11 17.525v-4.525h-2v4.525c-3.396-0.446-6.080-3.129-6.527-6.525h4.527v-2h-4.527c0.447-3.396 3.131-6.079 6.527-6.525v4.525h2v-4.525c3.394 0.447 6.078 3.13 6.525 6.525h-4.525v2h4.525c-0.447 3.394-3.131 6.078-6.525 6.525z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="testemonial-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              eius ab quis! Eveniet veritatis illo rerum, ea delectus sequi
+              alias cumque quas quam, nesciunt non recusandae pariatur adipisci
+              enim fuga?
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section class="section margin-bottom" id="section-3">
+        <h2 class="section-title">get in touch with us</h2>
+        <div class="symbol"></div>
+        <div class="section-content contact-section-content">
+          <figure class="contact-card">
+            <h3>Contact us</h3>
+            <ul class="contact-info">
+              <li>
+                <a href=""
+                  ><span
+                    ><svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <title>facebook</title>
+                      <path
+                        d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                      ></path></svg
+                  ></span>
+                  +0(12) 000 123 3120</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><span
+                    ><svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <title>facebook</title>
+                      <path
+                        d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                      ></path></svg></span
+                  >mail@example.com</a
+                >
+              </li>
+            </ul>
+          </figure>
+          <figure class="contact-card">
+            <h3>Connect us</h3>
+            <ul class="contact-info">
+              <li>
+                <a href="#"
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>facebook</title>
+                    <path
+                      d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                    ></path></svg
+                ></a>
+              </li>
 
-        <h2 class="about-us-heading">Who We Are</h2>
-        <div class="simbol"></div>
-        <div class="services-contnet">
-          <div class="testemonials">
-            <div class="img-rating-container">
-              <img src="./img/t1.jpg" alt="" />
-              <div>
-                <h2>Wiliamson</h2>
-                <div>*****</div>
-              </div>
-            </div>
-            <p class="testemonials-par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              tempore commodi ratione quod quaerat!
-            </p>
+              <li>
+                <a href="#"
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>facebook</title>
+                    <path
+                      d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>facebook</title>
+                    <path
+                      d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>facebook</title>
+                    <path
+                      d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+          </figure>
+          <figure class="contact-card">
+            <h3>Address</h3>
+            <ul class="contact-info">
+              <li><a href="#">1680 Richmond St, Corner in, ON N58</a></li>
+              <li><a href="#">3d7, USA</a></li>
+            </ul>
+          </figure>
+          <figure class="contact-card">
+            <img src="./images/house.png" alt="house icon img" />
+          </figure>
+        </div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.31554952543!2d-74.26054888834555!3d40.6971477651349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1667837021389!5m2!1ssr!2srs"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section class="mail-section margin-bottom" id="section-4">
+        <h2 class="section-title">Mail us</h2>
+        <div class="symbol"></div>
+        <form action="" class="action">
+          <div class="actions-container">
+            <input type="text" placeholder="Name" />
+            <input type="password" placeholder="Email" />
+            <input type="text" placeholder="Telephone" />
           </div>
-          <div class="testemonials">
-            <div class="img-rating-container">
-              <img src="./img/t2.jpg" alt="" />
-              <div>
-                <h2>Wiliamson</h2>
-                <div>*****</div>
-              </div>
-            </div>
-            <p class="testemonials-par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              tempore commodi ratione quod quaerat!
-            </p>
-          </div>
-          <div class="testemonials">
-            <div class="img-rating-container">
-              <img src="./img/t3.jpg" alt="" />
-              <div>
-                <h2>Wiliamson</h2>
-                <div>*****</div>
-              </div>
-            </div>
-            <p class="testemonials-par">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              tempore commodi ratione quod quaerat!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="contact-container">
-        <div>
-          <h2>Contact us</h2>
-          <ul>
-            <li>INFO</li>
-            <li>INFO</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Contact us</h2>
-          <ul>
-            <li>INFO</li>
-            <li>INFO</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Contact us</h2>
-          <ul>
-            <li>INFO</li>
-            <li>INFO</li>
-          </ul>
-        </div>
-        <img src="" alt="" />
-      </div>
+
+          <textarea placeholder="Message"></textarea>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
