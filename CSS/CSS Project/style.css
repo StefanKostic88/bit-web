@@ -1,28 +1,14 @@
 @font-face {
   font-family: "Fontawsome";
   src: url(./fonts/fontawesome-webfont.eot);
-  src: url(./fonts/fontawesome-webfont.ttf);
-  src: url(./fonts/fontawesome-webfont.woff);
-  src: url(./fonts/fontawesome-webfont.woff2);
+}
+@font-face {
   font-family: "Glyphicons-halflings";
   src: url(./fonts/glyphicons-halflings-regular.eot);
-  src: url(./fonts/glyphicons-halflings-regular.ttf);
-  src: url(./fonts/glyphicons-halflings-regular.woff);
-  src: url(./fonts/glyphicons-halflings-regular.woff2);
-
+}
+@font-face {
   font-family: "Roboto-black";
   src: url(./fonts/Roboto-Regular.ttf);
-  src: url(./fonts/Roboto-Black.ttf);
-  src: url(./fonts/Roboto-BlackItalic.ttf);
-  src: url(./fonts/Roboto-Bold.ttf);
-  src: url(./fonts/Roboto-BoldItalic.ttf);
-  src: url(./fonts/Roboto-Italic.ttf);
-  src: url(./fonts/Roboto-Thin.ttf);
-  src: url(./fonts/Roboto-ThinItalic.ttf);
-  src: url(./fonts/Roboto-Light.ttf);
-  src: url(./fonts/Roboto-LightItalic.ttf);
-  src: url(./fonts/Roboto-Medium.ttf);
-  src: url(./fonts/Roboto-MediumItalic.ttf);
 }
 
 html {
@@ -31,6 +17,8 @@ html {
 body {
   font-size: 1.8rem;
   font-weight: 400;
+  font-family: "Roboto-black";
+  background-color: #212121;
 }
 *,
 *::before,
@@ -78,8 +66,13 @@ img {
 main {
   max-width: 120rem;
   margin: 0 auto;
+  background-color: #fff;
 }
-/* Helper class */
+
+/* /////////////////////////
+Helper class 
+////////////////////////////*/
+
 .flex {
   display: flex;
 }
@@ -92,11 +85,13 @@ main {
   justify-content: center;
 }
 .border-padding {
-  padding: 0 3rem;
+  padding: var(--padding-primary);
 }
 .margin-bottom {
   margin-bottom: 5rem;
 }
+
+/* ///////////////GENERAL COMP/////////////////  */
 
 .section {
   display: flex;
@@ -108,6 +103,7 @@ main {
   font-weight: 500;
   font-size: 3.2rem;
   text-transform: capitalize;
+  font-family: "Roboto-black";
 }
 .section-title::before {
   position: absolute;
@@ -137,7 +133,11 @@ main {
   background-color: white;
 }
 
-/* ///////////////GENERAL COMP///////////////// */
+.section-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
 .btn {
   background-color: #1c70b1;
@@ -154,12 +154,42 @@ main {
 .btn:hover {
   transform: scale(1.05);
 }
-
-.section-content {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+.link:link,
+.link:visited {
+  color: inherit;
+  text-transform: uppercase;
+  /* font-size: 1.6rem;
+  font-weight: 500; */
+  position: relative;
 }
+
+.link:hover,
+.link:active {
+  transform: translateY(-2px);
+  color: rgba(245, 245, 245, 0.5);
+}
+
+.link::before {
+  position: absolute;
+  content: "";
+  top: -10%;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #f5f5f5;
+  transform-origin: center;
+  transition: width 200ms ease-in;
+}
+.link:hover.link::before {
+  position: absolute;
+  content: "";
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-primary-white);
+}
+
 /* /////////////////////////////////////////// */
 /* ////////////////HERO///////////////////// */
 .hero {
@@ -194,19 +224,17 @@ main {
 .main-header__link:link,
 .main-header__link:visited {
   color: inherit;
-  text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 500;
-  position: relative;
 }
 
-.main-header__link:hover,
+/* .main-header__link:hover,
 .main-header__link:active {
   transform: translateY(-2px);
   color: rgba(245, 245, 245, 0.5);
-}
+} */
 
-.main-header__link::before {
+/* .main-header__link::before {
   position: absolute;
   content: "";
   top: -10%;
@@ -225,7 +253,7 @@ main {
   width: 100%;
   height: 1px;
   background-color: var(--color-primary-white);
-}
+} */
 
 .hero-content {
   flex-grow: 1;
@@ -239,10 +267,12 @@ main {
   font-size: 4.4rem;
   font-weight: 500;
   line-height: 1.2;
-  /* flex-basis: 50%;
-  flex-wrap: wrap; */
 }
 /* ///////////////////////SECTION 1/////////////////// */
+
+#section-1 {
+  padding: var(--padding-primary);
+}
 
 .img-container {
   flex-basis: 25%;
@@ -263,6 +293,7 @@ main {
   color: #1276b8;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
+  font-family: "Fontawsome";
 }
 .about-card p {
   margin-bottom: 1.5rem;
@@ -283,6 +314,10 @@ main {
 }
 
 /* ///////////////////////SECTION 2/////////////////// */
+
+#section-2 {
+  padding: var(--padding-primary);
+}
 
 .testemonial-card {
   background-color: #82c3f4;
@@ -416,8 +451,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
   width: 90%;
+  padding-bottom: 2rem;
 }
 .actions-container {
   display: flex;
@@ -442,12 +477,46 @@ textarea {
   background-color: #fd9727;
 }
 
+/* ////Footer////// */
+
+footer {
+  color: var(--color-primary-white);
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+  font-size: 1.2rem;
+  min-height: 10vh;
+}
+footer ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-transform: capitalize;
+}
+
+footer > div h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+footer > div h3 span {
+  padding-right: 0.4rem;
+}
+
 /* //////////////////////////////////////////////// */
 /* //////////////////MEDIA//////////////////////// */
 
 @media (max-width: 1300px) {
   main {
     width: 90%;
+  }
+  #section-1,
+  #section-2 {
+    padding: 0;
   }
   .section-content {
     padding: var(--padding-primary);
