@@ -333,24 +333,29 @@ Helper class
   display: flex;
   flex-direction: column;
 }
-.profile-name-rating-container span:nth-child(1) {
+.profile-name-rating-container > span:nth-child(1) {
   font-size: 1.4rem;
   font-weight: var(--font-bold-700);
   text-transform: uppercase;
 }
-.profile-name-rating-container span:nth-child(2) svg {
-  stroke: #fff;
-  fill: #fff;
-  width: 1.25rem;
-  height: 1.25rem;
+.rating {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  width: 8ch;
 }
-.profile-name-rating-container span:nth-child(2) svg:last-child {
+.rating svg:last-child {
   stroke: red;
   fill: red;
   width: 1.25rem;
   height: 1.25rem;
-  position: relative;
-  display: inline-block;
+}
+
+.rating svg {
+  stroke: #fff;
+  fill: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .profil-img {
