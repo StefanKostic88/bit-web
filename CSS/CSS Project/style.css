@@ -383,7 +383,7 @@ Helper class
 }
 
 .contact-card {
-  background-color: red;
+  /* background-color: red; */
   color: var(--color-primary-white);
   min-width: 25%;
   max-height: 17rem;
@@ -451,6 +451,7 @@ Helper class
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0;
   /* justify-content: center; */
 }
 .action {
@@ -490,6 +491,8 @@ footer {
   max-width: 120rem;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1.25rem;
   flex-direction: column;
   font-size: 1.2rem;
@@ -627,5 +630,15 @@ footer > div h3 span {
     flex-basis: 100%;
     min-height: 25rem;
     justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  footer ul {
+    gap: 1rem;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
