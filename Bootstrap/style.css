@@ -1,0 +1,11 @@
+.col-custom {
+  background-color: aqua;
+  border: 1px solid black;
+}
+.form-select {
+  width: 50%;
+}
+
+.carousel {
+  width: 50%;
+}

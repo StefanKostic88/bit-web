@@ -1,0 +1,26 @@
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+li a:link {
+  background-color: green;
+}
+li a:active {
+  background-color: yellow;
+}
+li a:visited {
+  background-color: orange;
+}
+
+p {
+  width: 288px;
+  padding: 10px;
+  border: 2px;
+  border-style: solid;
+  border-color: blueviolet;
+}
+
+/*# sourceMappingURL=main.css.map */
