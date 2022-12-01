@@ -11,50 +11,68 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
   </head>
   <body>
-    <div class="container text-center">
-      <div class="row">
-        <header class="col col-12 col-custom_header-footer col__main-header">
-          <h2>bit student</h2>
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item list-group-item__main-header">
-              portfolio
-            </li>
-            <li class="list-group-item list-group-item__main-header">about</li>
-            <li class="list-group-item list-group-item__main-header">
-              contact
-            </li>
-          </ul>
-        </header>
-        <div class="col col-12 hero-about__section-wraper section">
-          <img src="" alt="alt1" />
-          <div class="section-title-wraper">
-            <h1 class="hero-title section-title">bootstrap and sass</h1>
-            <div>
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
+    <div class="container-lg py-2">
+      <div class="row header-footersection-colors" id="main-nav">
+        <div
+          class="col d-flex justify-content-between justify-content-sm-around align-items-center"
+        >
+          <h2 class="fw-bold mb-0">BIT STUDENT</h2>
+
+          <nav class="navbar navbar-expand-md">
+            <div
+              class="container-fluid flex-row flex-nowrap align-items-start justify-content-around"
+            >
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a
+                    class="nav-link fw-bold"
+                    aria-current="page"
+                    href="#portfolio"
+                    >PORTFOLIO</a
+                  >
+                  <a class="nav-link fw-bold" href="#about">ABOUT</a>
+                  <a class="nav-link fw-bold" href="#contact">CONTACT</a>
+                </div>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-                <title>star-full</title>
-                <path
-                  d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"
-                ></path>
-              </svg>
+                <span class="mx-1">Menu</span>
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-          </div>
-          <div>web dev nesto nesto</div>
+          </nav>
         </div>
-        <div class="col col-12 section">
-          <div class="section-title-wraper">
-            <h2 class="section-title">portfolio</h2>
-            <div>
-              <svg
+      </div>
+
+      <header class="row py-5 hero-about-section-colors">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <img class="img-fluid" src="./img/prtfolio/profile.png" alt="" />
+          <!-- <div class="text-center">
+            <img
+              src="./Project/assets/images/profile.png"
+              class="img-fluid"
+              alt="..."
+            />
+          </div> -->
+          <h1 class="my-3">BOOTSTRAP AND SASS</h1>
+          <div class="star-title">
+            <span
+              ><svg
+                style="width: 18px; height: 18px"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -66,22 +84,74 @@
                   d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"
                 ></path>
               </svg>
-            </div>
+            </span>
           </div>
-          <div>
-            <img src="" alt="alt2" />
-            <img src="" alt="alt2" />
-            <img src="" alt="alt2" />
-            <img src="" alt="alt2" />
-            <img src="" alt="alt2" />
-            <img src="" alt="alt2" />
+          <p class="mt-3">
+            Web Developer - Garphic artist - User Experience Designer
+          </p>
+        </div>
+      </header>
+      <!-- text-center -->
+      <div class="row py-5 portfolio-contact-section-colors" id="portfolio">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class="mb-0">Portfolio</h2>
+          <div class="star-title star-dark mb-4">
+            <span
+              ><svg
+                style="width: 18px; height: 18px"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <title>star-full</title>
+                <path
+                  d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"
+                ></path>
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 w-75 ms-auto me-auto"
+          >
+            <div class="col mb-2">
+              <img src="./img/prtfolio/cabin.png" class="img-fluid" alt="..." />
+            </div>
+            <div class="col mb-2">
+              <img src="./img/prtfolio/cake.png" class="img-fluid" alt="..." />
+            </div>
+            <div class="col mb-2">
+              <img
+                src="./img/prtfolio/circus.png"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col mb-2">
+              <img src="./img/prtfolio/game.png" class="img-fluid" alt="..." />
+            </div>
+            <div class="col mb-2">
+              <img src="./img/prtfolio/safe.png" class="img-fluid" alt="..." />
+            </div>
+            <div class="col mb-2">
+              <img
+                src="./img/prtfolio/submarine.png"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
           </div>
         </div>
-        <div class="col col-12 hero-about__section-wraper section">
-          <div class="section-title-wraper">
-            <h2 class="section-title">about</h2>
-            <div>
-              <svg
+      </div>
+      <div class="row py-5 hero-about-section-colors" id="about">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class="mb-0">About</h2>
+          <div class="star-title mb-4">
+            <span
+              ><svg
+                style="width: 18px; height: 18px"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -93,29 +163,31 @@
                   d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"
                 ></path>
               </svg>
-            </div>
+            </span>
           </div>
-          <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-              libero sunt ab dicta hic sint, pariatur natus voluptatum quo
-              laborum iste, est possimus fugiat tempora alias aliquid deserunt
-              esse repellendus.
+          <div
+            class="row row-cols-1 row-cols-md-2 w-75 ms-auto me-auto justify-content-center"
+          >
+            <p class="col col-md-6 col-lg-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              ad, eligendi similique dolorem corrupti assumenda magnam
+              architecto fugiat sed doloremque.
             </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
-              libero sunt ab dicta hic sint, pariatur natus voluptatum quo
-              laborum iste, est possimus fugiat tempora alias aliquid deserunt
-              esse repellendus.
+            <p class="col col-md-6 col-lg-5">
+              Natus eos rerum sequi! Quod blanditiis tempora velit, reiciendis
+              itaque animi odio ad fugit mollitia ipsam accusamus minima est
+              adipisci.
             </p>
           </div>
-          <button>find more</button>
         </div>
-        <div class="col col-12 section">
-          <div class="section-title-wraper">
-            <h2 class="section-title">Contact</h2>
-            <div>
-              <svg
+      </div>
+      <div class="row py-5 portfolio-contact-section-colors" id="contact">
+        <div class="d-flex flex-column align-items-center">
+          <h2 class="mb-0">Contact me</h2>
+          <div class="star-title star-dark mb-4">
+            <span
+              ><svg
+                style="width: 18px; height: 18px"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -127,21 +199,22 @@
                   d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"
                 ></path>
               </svg>
-            </div>
+            </span>
           </div>
-          <form action="">
+          <form
+            action=""
+            style="align-self: stretch"
+            class="col-11 col-sm-10 col-md-9 ms-auto me-auto"
+          >
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
-                >name</label
+                >Name</label
               >
               <input
                 type="text"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
               />
-            </div>
-            <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
                 >Email address</label
               >
@@ -149,67 +222,129 @@
                 type="email"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
               />
-            </div>
-            <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
-                >phone number</label
+                >Phone</label
               >
               <input
                 type="text"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
               />
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"
-                >message</label
+                >Message</label
               >
               <textarea
+                style="resize: none"
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
               ></textarea>
             </div>
+            <button class="btn btn-primary" type="button">Send</button>
           </form>
         </div>
-        <footer class="col col-12 col-custom_header-footer col__main-footer">
-          <ul class="list-group footer-list">
-            <h2>location</h2>
-            <ul class="list-group footer-sub-list">
+      </div>
+      <div class="row justify-content-center header-footersection-colors py-4">
+        <!-- d-flex flex-column align-items-center -->
+        <!-- d-flex flex-column flex-sm-row w-75 justify-content-center -->
+        <div class="row row-cols-1 row-cols-md-3 text-center w-75">
+          <!-- d-flex flex-column align-items-center text-center -->
+          <div class="d-flex flex-column align-items-center pt-1 pt-md-4">
+            <h3 class="mb-3">LOCATION</h3>
+            <ul class="list-group align-items-center">
               <li class="list-group-item">Centar za obrazovanje</li>
-              <li class="list-group-item">bit tehnology</li>
-              <li class="list-group-item">Nemanjina 4/I, Beograd</li>
+              <li class="list-group-item">BIT Tehnology</li>
+              <li class="list-group-item">Nemanjina 4\I, Beograd</li>
             </ul>
-          </ul>
-          <ul class="list-group footer-list">
-            <h2>around the web</h2>
-
-            <ul class="list-group footer-sub-list">
-              <li class="list-group-item">icon</li>
-              <li class="list-group-item">icon</li>
-              <li class="list-group-item">icon</li>
-              <li class="list-group-item">icon</li>
-            </ul>
-          </ul>
-          <ul class="list-group footer-list">
-            <h2>more details</h2>
-            <ul class="list-group footer-sub-list">
+          </div>
+          <div class="d-flex flex-column align-items-center pt-4">
+            <h3 class="mb-3">AROUND THE WEB</h3>
+            <ul class="list-group d-flex flex-row gap-2">
               <li class="list-group-item">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam commodi quis ex veritatis exercitationem
-                  expedita.Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Aliquam commodi quis ex veritatis exercitationem
-                  expedita.
-                </p>
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>facebook</title>
+                    <path
+                      d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                    ></path>
+                  </svg>
+                </span>
+              </li>
+              <li class="list-group-item">
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>instagram</title>
+                    <path
+                      d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h14c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2zM9.984 15.523c3.059 0 5.538-2.481 5.538-5.539 0-0.338-0.043-0.664-0.103-0.984h1.581v7.216c0 0.382-0.31 0.69-0.693 0.69h-12.614c-0.383 0-0.693-0.308-0.693-0.69v-7.216h1.549c-0.061 0.32-0.104 0.646-0.104 0.984 0 3.059 2.481 5.539 5.539 5.539zM6.523 9.984c0-1.912 1.55-3.461 3.462-3.461s3.462 1.549 3.462 3.461-1.551 3.462-3.462 3.462c-1.913 0-3.462-1.55-3.462-3.462zM16.307 6h-1.615c-0.382 0-0.692-0.312-0.692-0.692v-1.617c0-0.382 0.31-0.691 0.691-0.691h1.615c0.384 0 0.694 0.309 0.694 0.691v1.616c0 0.381-0.31 0.693-0.693 0.693z"
+                    ></path>
+                  </svg>
+                </span>
+              </li>
+              <li class="list-group-item">
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>twitter</title>
+                    <path
+                      d="M17.316 6.246c0.008 0.162 0.011 0.326 0.011 0.488 0 4.99-3.797 10.742-10.74 10.742-2.133 0-4.116-0.625-5.787-1.697 0.296 0.035 0.596 0.053 0.9 0.053 1.77 0 3.397-0.604 4.688-1.615-1.651-0.031-3.046-1.121-3.526-2.621 0.23 0.043 0.467 0.066 0.71 0.066 0.345 0 0.679-0.045 0.995-0.131-1.727-0.348-3.028-1.873-3.028-3.703 0-0.016 0-0.031 0-0.047 0.509 0.283 1.092 0.453 1.71 0.473-1.013-0.678-1.68-1.832-1.68-3.143 0-0.691 0.186-1.34 0.512-1.898 1.861 2.285 4.644 3.787 7.781 3.945-0.064-0.277-0.097-0.564-0.097-0.861 0-2.084 1.689-3.773 3.774-3.773 1.086 0 2.067 0.457 2.756 1.191 0.859-0.17 1.667-0.484 2.397-0.916-0.282 0.881-0.881 1.621-1.66 2.088 0.764-0.092 1.49-0.293 2.168-0.594-0.506 0.758-1.146 1.422-1.884 1.953z"
+                    ></path>
+                  </svg>
+                </span>
+              </li>
+              <li class="list-group-item">
+                <span
+                  ><svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <title>linkedin</title>
+                    <path
+                      d="M5 3c0 1.062-0.71 1.976-2.001 1.976-1.215 0-1.999-0.862-1.999-1.924 0-1.090 0.76-2.052 2-2.052s1.976 0.91 2 2zM1 19v-13h4v13h-4z"
+                    ></path>
+                    <path
+                      d="M7 10.444c0-1.545-0.051-2.836-0.102-3.951h3.594l0.178 1.723h0.076c0.506-0.811 1.746-2 3.822-2 2.532 0 4.432 1.695 4.432 5.342v7.442h-4v-6.861c0-1.594-0.607-2.81-2-2.81-1.062 0-1.594 0.86-1.873 1.569-0.102 0.254-0.127 0.608-0.127 0.963v7.139h-4v-8.556z"
+                    ></path>
+                  </svg>
+                </span>
               </li>
             </ul>
-          </ul>
-        </footer>
-        <div class="col col-12"><h3>CopyRight</h3></div>
+          </div>
+          <div class="d-flex flex-column align-items-center pt-4">
+            <h3 class="mb-3">MORE DETAILS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reiciendis inventore enim, tenetur veniam voluptatem accusantium
+              labore. Aenetur veniam voluptatem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center header-footersection-colors pb-4">
+        <span>Copy Bit student 2022</span>
+        <span>Thanks to start Bootstrap</span>
       </div>
     </div>
 
