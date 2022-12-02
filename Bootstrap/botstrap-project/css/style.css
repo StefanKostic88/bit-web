@@ -100,3 +100,9 @@ body {
 .navbar-toggler span {
   color: #fff;
 }
+
+@media (max-width: 575px) {
+  .navbar-toggler {
+    background-color: #18bc9c;
+  }
+}
