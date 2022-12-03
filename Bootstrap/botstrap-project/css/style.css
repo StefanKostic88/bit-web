@@ -106,3 +106,7 @@ body {
     background-color: #18bc9c;
   }
 }
+
+.hide-heading {
+  display: none;
+}

@@ -78,38 +78,74 @@
 //   padding-top: 20px;
 // }
 
-ul {
-  list-style: none;
-}
-li a {
-  text-decoration: none;
-  &:link {
-    background-color: green;
-  }
-  &:active {
-    background-color: yellow;
-  }
-  &:visited {
-    background-color: orange;
-  }
-}
+// ul {
+//   list-style: none;
+// }
+// li a {
+//   text-decoration: none;
+//   &:link {
+//     background-color: green;
+//   }
+//   &:active {
+//     background-color: yellow;
+//   }
+//   &:visited {
+//     background-color: orange;
+//   }
+// }
 
-@function paragraphSize($width) {
-  $size: 1;
-  $padding: 10px;
-  $border: 2px;
-  @if (p: first-of-type) {
-    $size: $width - ($padding + $border);
-  } @else if (p: last-of-type) {
-    $size: $width;
-  }
-  @return $size;
-}
+// @function paragraphSize($width) {
+//   $size: 1;
+//   $padding: 10px;
+//   $border: 2px;
+//   @if (p: first-of-type) {
+//     $size: $width - ($padding + $border);
+//   } @else if (p: last-of-type) {
+//     $size: $width;
+//   }
+//   @return $size;
+// }
 
-p {
-  width: paragraphSize(300px);
-  padding: 10px;
-  border: 2px;
-  border-style: solid;
-  border-color: blueviolet;
-}
+// p {
+//   width: paragraphSize(300px);
+//   padding: 10px;
+//   border: 2px;
+//   border-style: solid;
+//   border-color: blueviolet;
+// }
+
+// //CARD
+// $title-color: green;
+// $background1: #bdbdbd;
+// $background2: #607d8b;
+// $background3: #757575;
+// $main-title: #00ff00;
+// $even-color: red;
+// $table-width: 80%;
+// $pic-width: 30%;
+
+// .title {
+//   color: $title-color;
+// }
+
+// table {
+//   background-color: $background1;
+//   width: $table-width;
+//   td {
+//     background-color: $background2;
+//   }
+//   .even {
+//     color: $even-color;
+//   }
+// }
+
+// .container {
+//   background-color: $background3;
+//   h1 {
+//     color: $main-title;
+//   }
+// }
+
+// img {
+//   width: $pic-width;
+// }
