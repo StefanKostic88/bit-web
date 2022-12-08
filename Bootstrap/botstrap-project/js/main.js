@@ -1,5 +1,5 @@
 var btn = document.querySelector(".navbar-toggler");
-
-btn.addEventListener("click", function (e) {
-  document.querySelector("h2").classList.toggle("hide-heading");
+btn.addEventListener("click", function () {
+  document.getElementById("heading").classList.toggle("hide-heading");
+  document.getElementById("nav").classList.toggle("streach-nav");
 });

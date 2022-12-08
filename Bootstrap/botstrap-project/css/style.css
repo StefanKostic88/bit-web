@@ -110,3 +110,7 @@ body {
 .hide-heading {
   display: none;
 }
+
+.streach-nav {
+  width: 100%;
+}
