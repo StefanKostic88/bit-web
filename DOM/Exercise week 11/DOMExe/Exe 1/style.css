@@ -1,0 +1,13 @@
+.background-color {
+  background-color: aqua;
+  color: #fafafa;
+}
+.list-background {
+  background-color: orangered;
+}
+
+.third-list {
+  background-color: azure;
+  color: brown;
+  text-transform: uppercase;
+}
