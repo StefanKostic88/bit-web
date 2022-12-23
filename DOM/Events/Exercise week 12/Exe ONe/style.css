@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.add-background {
+  background-color: rgb(45, 62, 79);
+}
+
+button {
+  background-color: brown;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 5rem;
+}
