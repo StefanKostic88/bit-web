@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  height: 95vh;
+  background-color: rgb(128, 128, 128);
+}
+
+div {
+  /* width: 50%; */
+  width: 45%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 2rem 0 0 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+}
+
+li {
+  background-color: rgb(128, 128, 128);
+  padding: 0.4rem 1rem;
+  margin: 0.25rem;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 80%;
+}
+button {
+  width: 17%;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
