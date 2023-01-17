@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.img-container {
+  width: 50rem;
+  display: inline-block;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+}
+
+#player {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+  top: 40px;
+  left: 40px;
+  transform: translate(-50%, -50%);
+}
+
+#player img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background-color: orangered;
+  padding: 0.5em 0.75em;
+  border: none;
+  cursor: pointer;
+}
