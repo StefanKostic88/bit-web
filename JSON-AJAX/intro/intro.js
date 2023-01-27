@@ -1,12 +1,12 @@
 "use strict";
 
-console.log("Test1");
-console.log("Test2");
-setTimeout(() => {
-  console.log("Test3");
-}, 3000);
+// console.log("Test1");
+// console.log("Test2");
+// setTimeout(() => {
+//   console.log("Test3");
+// }, 3000);
 
-console.log("Test4");
+// console.log("Test4");
 
 //Stari nacin
 /*
@@ -45,7 +45,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
 
 //Axios biblioteka za komunikaciju sa serverom
 
-axios.get("https://jsonplaceholder.typicode.com/todos").then(function (res) {
-  console.log(res);
-});
+// axios.get("https://jsonplaceholder.typicode.com/todos").then(function (res) {
+//   console.log(res);
+// });
 // .catch().then();
