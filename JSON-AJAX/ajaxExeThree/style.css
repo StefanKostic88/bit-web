@@ -19,12 +19,14 @@ input {
   grid-template-columns: repeat(3, 1fr);
   width: 1000px;
 }
-.card {
+.card,
+.repo-card {
   width: 300px;
   box-shadow: 0 0 0 1px rgb(165, 165, 165);
 }
 
-.card-img-container img {
+.card-img-container img,
+.repo-card-img-container img {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -32,8 +34,13 @@ input {
   display: block;
 }
 
-.card-content {
+.card-content,
+.repo-card-content {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.repo-card-content {
+  flex-direction: column;
 }
