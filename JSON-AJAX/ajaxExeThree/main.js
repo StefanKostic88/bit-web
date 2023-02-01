@@ -14,11 +14,11 @@
   var controlSearchUsers = function (input) {
     galleryApp.clearParent();
     var url = "https://api.github.com/search/users?q=" + input;
-    getApiData(url).then((data) =>
+    getApiData(url).then((data) => {
       data.items.forEach((el) => {
         galleryApp.renderUsers(el.login, el.avatar_url);
-      })
-    );
+      });
+    });
   };
 
   //Search repos
